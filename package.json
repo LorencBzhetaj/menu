@@ -1,0 +1,21 @@
+{
+  "name": "gjecaj-qr-menu",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Gjeçaj Restaurant — standalone bilingual QR-code menu (Phase 1)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  }
+}

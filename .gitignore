@@ -1,0 +1,10 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+
+# full-res logo backup (the optimized 320px version ships from public/)
+gjecaj-logo-original.png

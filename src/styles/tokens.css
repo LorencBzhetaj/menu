@@ -1,0 +1,59 @@
+/* ============================================================
+   Gjeçaj — Design Tokens (CONFIRMED — do not change values)
+   Ported 1:1 from the approved prototype.
+   ============================================================ */
+:root {
+  --cream: #f8f4e9; /* main background, warm paper */
+  --cream-deep: #efe6d2;
+  --paper: #fbf8f1; /* card background */
+  --ink: #24344a; /* primary text, titles, price badge */
+  --ink-soft: #5b6b7e; /* secondary text, descriptions */
+  --charcoal: #17181a; /* header, crest */
+  --olive: #7c8a5e;
+  --olive-dark: #566241;
+  --iris: #8d86b8; /* light accent */
+  --iris-deep: #635c8e; /* script text */
+  --gold: #b9a365; /* price/divider accents */
+  --gold-soft: #d9cba0; /* text on dark backgrounds */
+  --line: rgba(36, 52, 74, 0.15);
+  --shadow: 0 10px 30px rgba(36, 52, 74, 0.08);
+
+  /* Confirmed hero background — "Mesnatë Alpine" */
+  --hero-bg: linear-gradient(160deg, #14202b 0%, #1f3b3a 55%, #3e5a45 100%);
+
+  /* Fonts */
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Cormorant Garamond', serif;
+  --font-script: 'Dancing Script', cursive;
+  --font-ui: 'Jost', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--cream);
+  background-image:
+    radial-gradient(circle at 15% 8%, rgba(141, 134, 184, 0.07), transparent 40%),
+    radial-gradient(circle at 90% 20%, rgba(124, 138, 94, 0.06), transparent 45%);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Every interactive control keeps a comfortable touch target (>= 44px) */
+button {
+  font-family: inherit;
+}

@@ -1,0 +1,367 @@
+/**
+ * Gjeçaj Restaurant — menu data (bilingual AL/EN).
+ * Source: approved prototype content (villa-gjecaj menu).
+ * Prices are in LEK. `icon` matches a key in features/menu/components/icons.jsx.
+ */
+
+export const menuData = {
+  categories: [
+    {
+      id: 'antipasta',
+      name_al: 'Antipasta',
+      name_en: 'Starters',
+      icon: 'antipasta',
+      items: [
+        {
+          id: 'proshute-djathra',
+          name_al: 'Proshutë & Mix Djathrash',
+          name_en: 'Cured Meat & Cheese Plate',
+          price: 1100,
+          desc_al: 'Proshutë e kuruar në shtëpi, djathëra me erëza të Vëlecikut, ullinj.',
+          desc_en: 'House-cured prosciutto, assorted cheeses from Vëlecik, olives.',
+        },
+        {
+          id: 'meze-tradicionale',
+          name_al: 'Meze Tradicionale',
+          name_en: 'Traditional Meze',
+          price: 650,
+          desc_al: 'Djathë i bardhë, turshi, ullinj, salcë kosi, piper i mbushur me djathë krem.',
+          desc_en: 'White cheese, pickles, olives, yoghurt sauce, pepper filled with cream cheese.',
+        },
+        {
+          id: 'fli',
+          name_al: 'Fli',
+          name_en: 'Fli',
+          price: 590,
+          desc_al: 'Shtresa tradicionale të holla, pjekur mbi zjarr dhe zbukuruar me produkte qumështi.',
+          desc_en: 'Traditional thin layers baked over open fire, garnished with dairy.',
+        },
+      ],
+    },
+    {
+      id: 'supa',
+      name_al: 'Supa',
+      name_en: 'Soups',
+      icon: 'supa',
+      items: [
+        {
+          id: 'supe-perimesh',
+          name_al: 'Supë Kremoze Perimesh',
+          name_en: 'Cream of Vegetable Soup',
+          price: 300,
+          desc_al: 'Me perime të freskëta sezonale.',
+          desc_en: 'With fresh seasonal vegetables.',
+        },
+        {
+          id: 'supe-pule',
+          name_al: 'Supë Pule Kremoze',
+          name_en: 'Creamy Chicken Soup',
+          price: 300,
+          desc_al: 'Gjalpë, miell, vezë, lëng limoni, lëng pule.',
+          desc_en: 'Butter, flour, eggs, lemon juice, chicken broth.',
+        },
+        {
+          id: 'groshe',
+          name_al: 'Groshë',
+          name_en: 'Bean Stew',
+          price: 300,
+          desc_al: 'Fasule nga rajoni i Shalës, gatuar me hudhër shtëpie.',
+          desc_en: 'Beans from the Shala region, cooked with homemade garlic.',
+        },
+        {
+          id: 'qervish-supe',
+          name_al: 'Qervish',
+          name_en: 'Qervish',
+          price: 300,
+          desc_al: 'Miell misri, hudhër, gjalpë, lëng pule.',
+          desc_en: 'Corn flour, garlic, butter, chicken broth.',
+        },
+      ],
+    },
+    {
+      id: 'sallata',
+      name_al: 'Sallata',
+      name_en: 'Salads',
+      icon: 'sallata',
+      items: [
+        {
+          id: 'sallate-fshati',
+          name_al: 'Sallatë Fshati',
+          name_en: 'Village Salad',
+          price: 500,
+          desc_al: 'Domate të freskëta, kastravec, speca, qepë, djathë.',
+          desc_en: 'Fresh tomatoes, cucumber, peppers, onion, cheese.',
+        },
+        {
+          id: 'sallate-mikse',
+          name_al: 'Sallatë Mikse',
+          name_en: 'Mixed Salad',
+          price: 550,
+          desc_al: 'Marulë, domate, kastravec, speca, qepë, djathë vendas, ullinj.',
+          desc_en: 'Lettuce, tomato, cucumber, peppers, onion, local cheese, olives.',
+        },
+        {
+          id: 'sallate-turshi',
+          name_al: 'Sallatë me Turshi',
+          name_en: 'Pickled Salad',
+          price: 300,
+          desc_al: 'Me perime të freskëta sezonale.',
+          desc_en: 'With fresh seasonal vegetables.',
+        },
+        {
+          id: 'sallate-shefit',
+          name_al: 'Sallatë e Shefit',
+          name_en: "Chef's Salad",
+          price: 590,
+          desc_al: 'Perime sezonale dhe copa pule.',
+          desc_en: 'Seasonal vegetables and chicken pieces.',
+        },
+      ],
+    },
+    {
+      id: 'kryesore',
+      name_al: 'Pjata Kryesore',
+      name_en: 'Main Course',
+      icon: 'kryesore',
+      subcategories: [
+        {
+          name_al: 'Vegjetariane',
+          name_en: 'Vegetarian',
+          items: [
+            {
+              name_al: 'Byrek',
+              name_en: 'Byrek',
+              price: 450,
+              desc_al: 'Me spinaq, djathë ose qepë.',
+              desc_en: 'With spinach, cheese, or onion.',
+            },
+            {
+              name_al: 'Fërgese',
+              name_en: 'Fërgese',
+              price: 800,
+              desc_al: 'Me gjizë dhe speca.',
+              desc_en: 'With ricotta and peppers.',
+            },
+            {
+              name_al: 'Speca ose Patëllxhan të Mbushur',
+              name_en: 'Stuffed Peppers or Eggplant',
+              price: 690,
+              desc_al: 'Të mbushura me oriz ose perime të ndryshme të freskëta.',
+              desc_en: 'Stuffed with rice or a mix of fresh vegetables.',
+            },
+            {
+              name_al: 'Pllaqi në Furrë',
+              name_en: 'Pllaqi',
+              price: 590,
+              desc_al: 'Të ziera me perime të ndryshme të freskëta.',
+              desc_en: 'Braised with various fresh vegetables.',
+            },
+            {
+              name_al: 'Perime të Skuqura',
+              name_en: 'Fried Vegetables',
+              price: 500,
+              desc_al: 'Me hudhër dhe vaj ulliri.',
+              desc_en: 'With garlic and olive oil.',
+            },
+            {
+              name_al: 'Patate të Pjekura në Furrë',
+              name_en: 'Oven Roasted Potatoes',
+              price: 400,
+              desc_al: 'Me hudhër dhe vaj ulliri, rozmarinë e freskët nga kopshti ynë.',
+              desc_en: 'With garlic and olive oil, fresh rosemary from our garden.',
+            },
+            {
+              name_al: 'Djathë në Furrë',
+              name_en: 'Cheese in the Oven',
+              price: 790,
+              desc_al: 'Të shoqëruara me vaj ulliri, speca dhe domate.',
+              desc_en: 'Baked with olive oil, peppers and tomatoes.',
+            },
+          ],
+        },
+        {
+          name_al: 'Mishra',
+          name_en: 'Meats',
+          items: [
+            {
+              name_al: 'Qengj ose Keç i Pjekur në Furrë',
+              name_en: 'Oven-Roasted Lamb or Baby Goat',
+              price: 2250,
+              desc_al: 'Shërbehet me patate furre (500 gr).',
+              desc_en: 'Served with roasted potatoes (500g).',
+            },
+            {
+              name_al: 'Gjysmë Pulë e Pjekur në Furrë',
+              name_en: 'Half Roasted Chicken',
+              price: 1700,
+              desc_al: 'Shërbehet me oriz (pilaf shqiptar).',
+              desc_en: 'Served with rice (Albanian pilaf).',
+            },
+            {
+              name_al: 'Fileto Pule në Skarë',
+              name_en: 'Grilled Chicken Fillet',
+              price: 1200,
+              desc_al: 'Shërbehet me perime.',
+              desc_en: 'Served with vegetables.',
+            },
+            {
+              name_al: 'Eskallop me Mish Derri',
+              name_en: 'Pork Escalope',
+              price: 1200,
+              desc_al: 'Mish derri vendas, gatuar në furrë dhe përfunduar në tigan.',
+              desc_en: 'Local pork, oven-cooked and finished in the pan.',
+            },
+            {
+              name_al: 'Salçiçe në Skarë',
+              name_en: 'Sausage on the Grill',
+              price: 1000,
+              desc_al: 'Shërbehet me patate furre.',
+              desc_en: 'Served with oven potatoes.',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 'pije',
+      name_al: 'Pije',
+      name_en: 'Drinks',
+      icon: 'pije',
+      subcategories: [
+        {
+          name_al: 'Jo Alkoolike',
+          name_en: 'Soft Drinks',
+          items: [
+            { name_al: 'Pepsi', name_en: 'Pepsi', price: 150 },
+            { name_al: 'Coca-Cola', name_en: 'Coca-Cola', price: 150 },
+            { name_al: 'Limon Soda', name_en: 'Lemon Soda', price: 150 },
+            { name_al: 'Orange Soda', name_en: 'Orange Soda', price: 150 },
+            { name_al: 'Ivi Lemon', name_en: 'Ivi Lemon', price: 150 },
+            { name_al: 'Ivi Pjeshkë', name_en: 'Ivi Peach', price: 150 },
+            { name_al: 'Çaj i Ftohtë me Limon', name_en: 'Ice Tea Lemon', price: 150 },
+            { name_al: 'Çaj i Ftohtë me Pjeshkë', name_en: 'Ice Tea Peach', price: 150 },
+            { name_al: 'Lëng Mollë', name_en: 'Apple Juice', price: 150 },
+            { name_al: 'Lëng Pjeshke', name_en: 'Peach Juice', price: 150 },
+            { name_al: 'Lëng Luleshtrydhesh', name_en: 'Strawberry Juice', price: 150 },
+            { name_al: 'Trëndafili Aranxhata', name_en: 'Aranxhata Rose', price: 150 },
+            { name_al: 'Ujë i Gazuar Glina', name_en: 'Sparkling Water Glina', price: 100 },
+            { name_al: 'Burim Uji Natyror', name_en: 'Natural Water Spring', price: 100 },
+          ],
+        },
+        {
+          name_al: 'Kafe & Çajra',
+          name_en: 'Coffees & Teas',
+          items: [
+            { name_al: 'Kafe Ekspres', name_en: 'Espresso', price: 100 },
+            { name_al: 'Kafe Filtri', name_en: 'Filter Coffee', price: 100 },
+            { name_al: 'Çaj Mali', name_en: 'Local Mountain Tea', price: 100 },
+            { name_al: 'Çaj Mali me Mjaltë', name_en: 'Local Mountain Tea with Honey', price: 150 },
+            { name_al: 'Kapuçino', name_en: 'Cappuccino', price: 150 },
+            { name_al: 'Makiato', name_en: 'Macchiato', price: 100 },
+          ],
+        },
+        {
+          name_al: 'Birra',
+          name_en: 'Beers',
+          items: [
+            { name_al: 'Birra Tirana L', name_en: 'Tirana Beer L', price: 300 },
+            { name_al: 'Birra Korça L', name_en: 'Korça Beer L', price: 300 },
+            { name_al: 'Birra Elbar L', name_en: 'Elbar Beer L', price: 300 },
+            { name_al: 'Birra Elbar S', name_en: 'Elbar Beer S', price: 200 },
+          ],
+        },
+        {
+          name_al: 'Alkoolike',
+          name_en: 'Alcoholic',
+          items: [
+            { name_al: 'Raki Rrushi', name_en: 'Grape Raki', price: 100 },
+            { name_al: 'Raki Kumbulle', name_en: 'Plum Raki', price: 100 },
+          ],
+        },
+      ],
+    },
+    {
+      id: 'embelsira',
+      name_al: 'Fruta & Ëmbëlsira',
+      name_en: 'Fruits & Desserts',
+      icon: 'embelsira',
+      items: [
+        {
+          id: 'revani',
+          name_al: 'Revani',
+          name_en: 'Traditional Revani',
+          price: 250,
+          desc_al: 'Ëmbëlsirë tradicionale, porcion.',
+          desc_en: 'Traditional dessert cake, single portion.',
+        },
+        {
+          id: 'miks-frutash',
+          name_al: 'Miks Frutash Sezonale',
+          name_en: 'Mixed Seasonal Fruits',
+          price: 250,
+          desc_al: 'Frutat e sezonit, porcion.',
+          desc_en: 'Seasonal fruit, single portion.',
+        },
+      ],
+    },
+  ],
+
+  tastingMenus: [
+    {
+      id: 'aromat-e-alpeve',
+      name: 'Aromat e Alpeve',
+      price: 4000,
+      guests_al: 'MENU DEGUSTUESE · PËR 2 PERSONA',
+      guests_en: 'TASTING MENU · FOR 2 PEOPLE',
+      courses: [
+        {
+          title_al: 'Mesoret',
+          title_en: 'Starter',
+          desc_al: 'Djathë i bardhë gjizë, turshi shtëpie, salcë kosi, byrek, bukë misri, fërgese, pllaqi, salcë copëza.',
+          desc_en: 'White cottage cheese, homemade pickles, yoghurt sauce, byrek, corn bread, fërgese, pllaqi, minced sauce.',
+        },
+        {
+          title_al: 'Kryesoret',
+          title_en: 'Main',
+          desc_al: 'Djathë në furrë, qervish me arra, gjysmë pulë me oriz.',
+          desc_en: 'Cheese in the oven, qervish with walnuts, half chicken with rice.',
+        },
+        {
+          title_al: 'Ëmbëlsirë',
+          title_en: 'Dessert',
+          desc_al: 'Revani — ëmbëlsirë tradicionale e zbukuruar me reçel shtëpie.',
+          desc_en: 'Traditional Revani, garnished with homemade jam.',
+        },
+      ],
+    },
+    {
+      id: 'sofra-e-malesorit',
+      name: 'Sofra e Malësorit',
+      price: 5000,
+      guests_al: 'MENU DEGUSTUESE · PËR 2 PERSONA',
+      guests_en: 'TASTING MENU · FOR 2 PEOPLE',
+      courses: [
+        {
+          title_al: 'Mesoret',
+          title_en: 'Starter',
+          desc_al: 'Djathë i bardhë gjizë, turshi shtëpie, salcë kosi, byrek/fli, bukë misri, fërgese, pllaqi, salcë copëza.',
+          desc_en: 'White cottage cheese, homemade pickles, yoghurt sauce, byrek/fli, corn bread, fërgese, pllaqi, minced sauce.',
+        },
+        {
+          title_al: 'Kryesoret',
+          title_en: 'Main',
+          desc_al: 'Maze e zjarrtë, miks speca/patëllxhan të mbushur, mish qingji me patate furre (500gr).',
+          desc_en: 'Maze cooked over fire, mixed stuffed peppers/eggplant, oven-roasted lamb with potatoes (500g).',
+        },
+        {
+          title_al: 'Ëmbëlsirë',
+          title_en: 'Dessert',
+          desc_al: 'Sultjash — ëmbëlsirë tradicionale me oriz dhe qumësht.',
+          desc_en: 'Sultjash, traditional dessert with rice and milk.',
+        },
+      ],
+    },
+  ],
+};
+
+export default menuData;
