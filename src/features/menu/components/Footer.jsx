@@ -17,6 +17,19 @@ export default function Footer() {
         Theth, Shkodër · {t('Alpet Shqiptare', 'Albanian Alps')} ·{' '}
         <a href="tel:+355672046333">+355 67 204 6333</a>
       </div>
+
+      <a
+        className="qm-reserve-btn"
+        href="https://villagjecaj.com/restaurant-reservations/"
+        target="_blank"
+        rel="noopener"
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+          <rect x="3" y="5" width="18" height="16" rx="2" />
+          <path d="M8 3v4M16 3v4M3 10h18" />
+        </svg>
+        {t('REZERVO TAVOLINË', 'RESERVE A TABLE')}
+      </a>
     </footer>
   );
 }

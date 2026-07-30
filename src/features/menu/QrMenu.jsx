@@ -1,7 +1,8 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
 import { menuData } from '../../data/menuData';
 import { LanguageProvider, useLanguage } from './i18n/LanguageContext';
+import { observeIframeHeight, reportIframeHeight } from './iframeHeight';
 
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -21,7 +22,7 @@ import './styles/menu.css';
  */
 
 function MainMenu() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const { categories } = menuData;
   const [activeCat, setActiveCat] = useState(categories[0].id);
 
@@ -29,6 +30,11 @@ function MainMenu() {
     () => categories.find((c) => c.id === activeCat) ?? categories[0],
     [categories, activeCat]
   );
+
+  // Category tab changes alter content height → tell the parent iframe.
+  useEffect(() => {
+    reportIframeHeight();
+  }, [activeCat, lang]);
 
   return (
     <>
@@ -72,7 +78,16 @@ function TastingMenu() {
 }
 
 function MenuContent() {
+  const { lang } = useLanguage();
   const [mode, setMode] = useState('main'); // 'main' | 'tasting'
+
+  // Set up auto height reporting once (load / resize / ResizeObserver).
+  useEffect(() => observeIframeHeight(), []);
+
+  // Language or Main↔Tasting changes alter content height → report it.
+  useEffect(() => {
+    reportIframeHeight();
+  }, [lang, mode]);
 
   return (
     <div className="qr-menu">
