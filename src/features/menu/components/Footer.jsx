@@ -35,6 +35,7 @@ export default function Footer() {
         <a
           className="qm-download-btn"
           href="/gjecaj-menu.pdf"
+          download="Menu-Gjecaj.pdf"
           target="_blank"
           rel="noopener"
         >
