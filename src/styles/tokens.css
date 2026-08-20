@@ -2,6 +2,16 @@
    Gjeçaj — Design Tokens (CONFIRMED — do not change values)
    Ported 1:1 from the approved prototype.
    ============================================================ */
+
+/* Playfair Display's ampersand is very ornate; map ONLY "&" (U+0026) to a
+   classic serif so titles/dish names show a traditional ampersand. Everything
+   else still renders in Playfair. */
+@font-face {
+  font-family: 'AmpSerif';
+  src: local('Georgia'), local('Times New Roman'), local('Times');
+  unicode-range: U+0026;
+}
+
 :root {
   --cream: #f8f4e9; /* main background, warm paper */
   --cream-deep: #efe6d2;
@@ -22,7 +32,7 @@
   --hero-bg: linear-gradient(160deg, #14202b 0%, #1f3b3a 55%, #3e5a45 100%);
 
   /* Fonts */
-  --font-display: 'Playfair Display', serif;
+  --font-display: 'AmpSerif', 'Playfair Display', serif;
   --font-body: 'Cormorant Garamond', serif;
   --font-script: 'Dancing Script', cursive;
   --font-ui: 'Jost', sans-serif;
