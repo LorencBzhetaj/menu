@@ -58,6 +58,9 @@ function MainMenu() {
   );
 }
 
+// Temporarily disabled — only the main menu is shown for now. Kept (with its
+// data in menuData.tastingMenus) so it can be re-enabled by restoring the mode
+// toggle in Hero + MenuContent. eslint-disable-next-line no-unused-vars
 function TastingMenu() {
   const { t } = useLanguage();
 
@@ -79,21 +82,22 @@ function TastingMenu() {
 
 function MenuContent() {
   const { lang } = useLanguage();
-  const [mode, setMode] = useState('main'); // 'main' | 'tasting'
 
   // Set up auto height reporting once (load / resize / ResizeObserver).
   useEffect(() => observeIframeHeight(), []);
 
-  // Language or Main↔Tasting changes alter content height → report it.
+  // Language change alters content height → report it to the parent iframe.
   useEffect(() => {
     reportIframeHeight();
-  }, [lang, mode]);
+  }, [lang]);
 
   return (
     <div className="qr-menu">
       <Header />
-      <Hero mode={mode} onModeChange={setMode} />
-      <main>{mode === 'main' ? <MainMenu /> : <TastingMenu />}</main>
+      <Hero />
+      <main>
+        <MainMenu />
+      </main>
       <Footer />
     </div>
   );
