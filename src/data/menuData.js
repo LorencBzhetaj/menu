@@ -193,6 +193,7 @@ export const menuData = {
           name_en: 'Meats',
           items: [
             {
+              image: '/ushqimet/qengj-ose-kec-i-pjekur-ne-furre.jpg',
               name_al: 'Qengj ose Keç i Pjekur në Furrë',
               name_en: 'Oven-Roasted Lamb or Baby Goat',
               price: 2250,
