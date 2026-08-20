@@ -208,6 +208,14 @@ export const menuData = {
               desc_en: 'Served with rice (Albanian pilaf).',
             },
             {
+              image: '/ushqimet/pule-me-jufka.jpg',
+              name_al: 'Pulë me Jufka',
+              name_en: 'Chicken with Jufka',
+              price: 1700,
+              desc_al: 'Shërbehet me jufka shtëpie.',
+              desc_en: 'Served with homemade jufka pasta.',
+            },
+            {
               name_al: 'Fileto Pule në Skarë',
               name_en: 'Grilled Chicken Fillet',
               price: 1200,
