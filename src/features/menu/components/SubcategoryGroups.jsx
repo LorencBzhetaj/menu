@@ -18,12 +18,17 @@ function ItemRow({ item }) {
   const { t } = useLanguage();
   const desc = t(item, 'desc');
   return (
-    <div className="qm-item-row">
-      <div className="qm-item-row-top">
-        <span className="qm-item-name">{t(item, 'name')}</span>
-        <span className="qm-item-price">{item.price}</span>
+    <div className={`qm-item-row ${item.image ? 'has-thumb' : ''}`}>
+      {item.image ? (
+        <img className="qm-item-row__thumb" src={item.image} alt="" loading="lazy" />
+      ) : null}
+      <div className="qm-item-row__body">
+        <div className="qm-item-row-top">
+          <span className="qm-item-name">{t(item, 'name')}</span>
+          <span className="qm-item-price">{item.price}</span>
+        </div>
+        {desc ? <p className="qm-item-desc-sm">{desc}</p> : null}
       </div>
-      {desc ? <p className="qm-item-desc-sm">{desc}</p> : null}
     </div>
   );
 }

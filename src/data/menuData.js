@@ -22,6 +22,7 @@ export const menuData = {
         },
         {
           id: 'meze-tradicionale',
+          image: '/ushqimet/meze.jpg',
           name_al: 'Meze Tradicionale',
           name_en: 'Traditional Meze',
           price: 650,
@@ -46,6 +47,7 @@ export const menuData = {
       items: [
         {
           id: 'supe-perimesh',
+          image: '/ushqimet/supe-kremoze-perimesh.jpg',
           name_al: 'Supë Kremoze Perimesh',
           name_en: 'Cream of Vegetable Soup',
           price: 300,
@@ -86,6 +88,7 @@ export const menuData = {
       items: [
         {
           id: 'sallate-fshati',
+          image: '/ushqimet/sallate-fshati.jpg',
           name_al: 'Sallatë Fshati',
           name_en: 'Village Salad',
           price: 500,
@@ -129,6 +132,7 @@ export const menuData = {
           name_en: 'Vegetarian',
           items: [
             {
+              image: '/ushqimet/byrek.jpg',
               name_al: 'Byrek',
               name_en: 'Byrek',
               price: 450,
@@ -136,6 +140,7 @@ export const menuData = {
               desc_en: 'With spinach, cheese, or onion.',
             },
             {
+              image: '/ushqimet/fergese.jpg',
               name_al: 'Fërgese',
               name_en: 'Fërgese',
               price: 800,
@@ -143,6 +148,7 @@ export const menuData = {
               desc_en: 'With ricotta and peppers.',
             },
             {
+              image: '/ushqimet/speca-te-mbushur.jpg',
               name_al: 'Speca ose Patëllxhan të Mbushur',
               name_en: 'Stuffed Peppers or Eggplant',
               price: 690,
@@ -150,6 +156,7 @@ export const menuData = {
               desc_en: 'Stuffed with rice or a mix of fresh vegetables.',
             },
             {
+              image: '/ushqimet/pllaqi-jumbo-beans.jpg',
               name_al: 'Pllaqi në Furrë',
               name_en: 'Pllaqi',
               price: 590,
@@ -164,6 +171,7 @@ export const menuData = {
               desc_en: 'With garlic and olive oil.',
             },
             {
+              image: '/ushqimet/patate-te-pjekura-ne-furre.jpg',
               name_al: 'Patate të Pjekura në Furrë',
               name_en: 'Oven Roasted Potatoes',
               price: 400,
@@ -171,6 +179,7 @@ export const menuData = {
               desc_en: 'With garlic and olive oil, fresh rosemary from our garden.',
             },
             {
+              image: '/ushqimet/djath-furre.jpg',
               name_al: 'Djathë në Furrë',
               name_en: 'Cheese in the Oven',
               price: 790,

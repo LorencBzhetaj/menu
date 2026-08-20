@@ -312,13 +312,27 @@
   gap: 16px;
 }
 .qm-card {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
   background: var(--paper);
   border-radius: 14px;
-  padding: 20px 20px 18px;
+  padding: 16px 18px;
   box-shadow: var(--shadow);
   border: 1px solid rgba(36, 52, 74, 0.05);
 }
-.qm-card-top {
+.qm-card__thumb {
+  width: 72px;
+  height: 72px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.qm-card__main {
+  flex: 1;
+  min-width: 0;
+}
+.qm-card__top {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -366,6 +380,7 @@
   color: var(--ink-soft);
   font-size: 0.95rem;
   line-height: 1.4;
+  margin-top: 8px;
 }
 
 /* ===== SUB-CATEGORIES (Pjata Kryesore, Pije) ===== */
@@ -421,6 +436,22 @@
 }
 .qm-item-row {
   padding: 9px 0;
+}
+.qm-item-row.has-thumb {
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+}
+.qm-item-row__thumb {
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.qm-item-row__body {
+  flex: 1;
+  min-width: 0;
 }
 .qm-item-row + .qm-item-row {
   border-top: 1px dashed rgba(36, 52, 74, 0.08);
