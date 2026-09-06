@@ -84,6 +84,32 @@
   font-weight: 600;
 }
 
+/* Light variant — compact AL/EN toggle on the cream ground (embed mode) */
+.qm-lang-toggle--light {
+  background: rgba(36, 52, 74, 0.06);
+}
+.qm-lang-toggle--light button {
+  color: var(--ink-soft);
+}
+.qm-lang-toggle--light button.active {
+  background: var(--ink);
+  color: var(--gold-soft);
+}
+
+/* ===== EMBED MODE (?embed=1) ===== */
+/* Compact bar holding the language toggle, right-aligned above the heading. */
+.qm-embed-bar {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 14px 20px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+/* No header/hero in embed → keep the heading close to the top, no empty gap. */
+.qr-menu--embed .qm-section-heading {
+  padding-top: 10px;
+}
+
 /* ===== HERO ===== */
 .qm-hero {
   position: relative;

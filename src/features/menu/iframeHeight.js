@@ -7,14 +7,19 @@
  *
  * We measure #root (not <body>, which has min-height:100vh and would over-report
  * inside a tall iframe).
+ *
+ * Message is targeted at the main site's origin only. If the site is ever served
+ * from www or a staging domain, update PARENT_ORIGIN to match.
  */
+
+const PARENT_ORIGIN = 'https://villagjecaj.com';
 
 export function reportIframeHeight() {
   if (typeof window === 'undefined') return;
   const el = document.getElementById('root') || document.body;
   const height = Math.ceil(el.getBoundingClientRect().height);
   if (!height) return;
-  window.parent.postMessage({ type: 'gjecaj-menu-height', height }, '*');
+  window.parent.postMessage({ type: 'gjecaj-menu-height', height }, PARENT_ORIGIN);
 }
 
 /**

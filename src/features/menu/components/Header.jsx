@@ -1,5 +1,6 @@
 import { useLanguage } from '../i18n/LanguageContext';
 import Crest from './Crest';
+import LanguageToggle from './LanguageToggle';
 
 /**
  * Minimal sticky header for the QR page — crest + wordmark on the left,
@@ -7,7 +8,7 @@ import Crest from './Crest';
  * has nowhere else to go.
  */
 export default function Header() {
-  const { lang, setLang, t } = useLanguage();
+  const { t } = useLanguage();
 
   return (
     <header className="qm-header">
@@ -19,24 +20,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="qm-lang-toggle" role="group" aria-label={t('Zgjidh gjuhën', 'Choose language')}>
-        <button
-          type="button"
-          className={lang === 'al' ? 'active' : ''}
-          aria-pressed={lang === 'al'}
-          onClick={() => setLang('al')}
-        >
-          AL
-        </button>
-        <button
-          type="button"
-          className={lang === 'en' ? 'active' : ''}
-          aria-pressed={lang === 'en'}
-          onClick={() => setLang('en')}
-        >
-          EN
-        </button>
-      </div>
+      <LanguageToggle />
     </header>
   );
 }
