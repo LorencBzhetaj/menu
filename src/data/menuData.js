@@ -67,6 +67,7 @@ export const menuData = {
         },
         {
           id: 'groshe',
+          image: '/ushqimet/pllaqi-jumbo-beans.jpg',
           name_al: 'Groshë',
           name_en: 'Bean Stew',
           price: 300,
