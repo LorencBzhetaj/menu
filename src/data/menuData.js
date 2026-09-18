@@ -32,6 +32,7 @@ export const menuData = {
         },
         {
           id: 'fli',
+          image: '/ushqimet/fli.jpg',
           name_al: 'Fli',
           name_en: 'Fli',
           price: 590,
@@ -166,6 +167,7 @@ export const menuData = {
               desc_en: 'Braised with various fresh vegetables.',
             },
             {
+              image: '/ushqimet/perime-te-skuqura.jpg',
               name_al: 'Perime të Skuqura',
               name_en: 'Fried Vegetables',
               price: 500,
@@ -203,6 +205,7 @@ export const menuData = {
               desc_en: 'Served with roasted potatoes (500g).',
             },
             {
+              image: '/ushqimet/gjysme-pule.jpg',
               name_al: 'Gjysmë Pulë e Pjekur në Furrë',
               name_en: 'Half Roasted Chicken',
               price: 1700,
