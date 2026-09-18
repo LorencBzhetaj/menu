@@ -14,6 +14,7 @@ export const menuData = {
       items: [
         {
           id: 'proshute-djathra',
+          image: '/ushqimet/proshute-djathra.jpg',
           name_al: 'Proshutë & Mix Djathrash',
           name_en: 'Cured Meat & Cheese Plate',
           price: 1100,
@@ -56,6 +57,7 @@ export const menuData = {
         },
         {
           id: 'supe-pule',
+          image: '/ushqimet/supe-pule.jpg',
           name_al: 'Supë Pule Kremoze',
           name_en: 'Creamy Chicken Soup',
           price: 300,
@@ -216,6 +218,7 @@ export const menuData = {
               desc_en: 'Served with homemade jufka pasta.',
             },
             {
+              image: '/ushqimet/fileto-pule.jpg',
               name_al: 'Fileto Pule në Skarë',
               name_en: 'Grilled Chicken Fillet',
               price: 1200,
@@ -223,6 +226,7 @@ export const menuData = {
               desc_en: 'Served with vegetables.',
             },
             {
+              image: '/ushqimet/eskallop.jpg',
               name_al: 'Eskallop me Mish Derri',
               name_en: 'Pork Escalope',
               price: 1200,
@@ -230,6 +234,7 @@ export const menuData = {
               desc_en: 'Local pork, oven-cooked and finished in the pan.',
             },
             {
+              image: '/ushqimet/salcice-zgare.jpg',
               name_al: 'Salçiçe në Skarë',
               name_en: 'Sausage on the Grill',
               price: 1000,
@@ -306,6 +311,7 @@ export const menuData = {
       items: [
         {
           id: 'revani',
+          image: '/ushqimet/revani.jpg',
           name_al: 'Revani',
           name_en: 'Traditional Revani',
           price: 250,
